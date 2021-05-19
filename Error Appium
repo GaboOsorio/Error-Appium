@@ -1,0 +1,81 @@
+[Appium] 
+[Appium] Appium v1.20.2 creating new AndroidUiautomator2Driver (v1.61.2) session
+[Appium] Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+[BaseDriver] Creating session with MJSONWP desired capabilities: {
+[BaseDriver]   "appActivity": "",
+[BaseDriver]   "appPackage": "",
+[BaseDriver]   "automationName": "Android",
+[BaseDriver]   "deviceName": "5200fef0b215c457",
+[BaseDriver]   "ensureWebviewsHavePages": true,
+[BaseDriver]   "noReset": true,
+[BaseDriver]   "platformName": "Android",
+[BaseDriver]   "platformVersion": "7.0",
+[BaseDriver]   "newCommandTimeout": 0,
+[BaseDriver]   "connectHardwareKeyboard": true
+[BaseDriver] }
+[BaseDriver] The following capabilities were provided, but are not recognized by Appium:
+[BaseDriver]   connectHardwareKeyboard
+[BaseDriver] Session created with session id: 655faae2-c82a-4f39-b9c4-073004769592
+[UiAutomator2] Neither 'app' nor 'appPackage' was set. Starting UiAutomator2 without the target application
+[ADB] Using 'adb.exe' from 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[AndroidDriver] Retrieving device list
+[ADB] Trying to find a connected android device
+[ADB] Getting connected devices
+[ADB] Connected devices: [{"udid":"5200fef0b215c457","state":"device"}]
+[AndroidDriver] Looking for a device with Android '7.0.0'
+[ADB] Setting device id to 5200fef0b215c457
+[ADB] Getting device platform version
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 shell getprop ro.build.version.release'
+[ADB] Current device property 'ro.build.version.release': 7.0
+[AndroidDriver] Using device: 5200fef0b215c457
+[ADB] Using 'adb.exe' from 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[ADB] Setting device id to 5200fef0b215c457
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 shell getprop ro.build.version.sdk'
+[ADB] Current device property 'ro.build.version.sdk': 24
+[ADB] Device API level: 24
+[AndroidDriver] No app sent in, not parsing package/activity
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 wait-for-device'
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 shell echo ping'
+[AndroidDriver] Pushing settings apk to device...
+[ADB] Getting install status for io.appium.settings
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 shell dumpsys package io.appium.settings'
+[ADB] 'io.appium.settings' is installed
+[ADB] Getting package info for 'io.appium.settings'
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 shell dumpsys package io.appium.settings'
+[ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.2.1' >= '3.2.1')
+[ADB] There is no need to install/upgrade 'C:\Users\Latitude\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[ADB] Getting IDs of all 'io.appium.settings' processes
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 shell 'pgrep --help; echo $?''
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 shell 'pgrep ^appium\\.settings$ || pgrep ^io\\.appium\\.setti$''
+[AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 shell appops set io.appium.settings android:mock_location allow'
+[Logcat] Starting logs capture with command: C:\\Users\\Latitude\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 5200fef0b215c457 logcat -v threadtime
+[UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 8200
+[ADB] Forwarding system: 8200 to device: 6790
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 forward tcp:8200 tcp:6790'
+[ADB] Getting install status for io.appium.uiautomator2.server
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 shell dumpsys package io.appium.uiautomator2.server'
+[ADB] 'io.appium.uiautomator2.server' is not installed
+[ADB] App 'C:\Users\Latitude\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.17.4.apk' is not installed
+[UiAutomator2] io.appium.uiautomator2.server installation state: notInstalled
+[ADB] Checking app cert for C:\Users\Latitude\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.17.4.apk
+[ADB] Using 'apksigner.jar' from 'C:\Users\Latitude\AppData\Local\Android\Sdk\build-tools\31.0.0-rc4\lib\apksigner.jar'
+[UiAutomator2] Deleting UiAutomator2 session
+[UiAutomator2] Deleting UiAutomator2 server session
+[WD Proxy] Matched '/' to command name 'deleteSession'
+[UiAutomator2] Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Trying to proxy a session command without session id
+[Logcat] Stopping logcat capture
+[ADB] Removing forwarded port socket connection: 8200 
+[ADB] Running 'C:\Users\Latitude\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 5200fef0b215c457 forward --remove tcp:8200'
+[BaseDriver] Event 'newSessionStarted' logged at 1621407079890 (01:51:19 GMT-0500 (hora de verano central))
+[MJSONWP] Encountered internal error running command: Error: Cannot verify the signature of 'C:\Users\Latitude\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.17.4.apk'. Original error: The JAVA_HOME location 'C:\Program Files\Java\jre1.8.0_241' must exist
+[MJSONWP]     at ADB.checkApkCert (C:\Users\Latitude\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-signing.js:270:11)
+[HTTP] <-- POST /wd/hub/session 500 2388 ms - 440
+[HTTP] 
+[HTTP] --> DELETE /wd/hub/session
+[HTTP] {}
+[HTTP] No route found for /wd/hub/session
+[HTTP] <-- DELETE /wd/hub/session 404 1 ms - 211
+[HTTP] 
