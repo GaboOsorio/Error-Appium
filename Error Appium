@@ -5,7 +5,7 @@
 [BaseDriver]   "appActivity": "",
 [BaseDriver]   "appPackage": "",
 [BaseDriver]   "automationName": "Android",
-[BaseDriver]   "deviceName": "5200fef0b215c457",
+[BaseDriver]   "deviceName": "J7 Neo",
 [BaseDriver]   "ensureWebviewsHavePages": true,
 [BaseDriver]   "noReset": true,
 [BaseDriver]   "platformName": "Android",
